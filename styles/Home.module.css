@@ -1,0 +1,31 @@
+.container {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  padding: 40px;
+  background: linear-gradient(to right, #fbc2eb, #a6c1ee);
+  min-height: 100vh;
+}
+
+.heading {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.imageWrapper {
+  display: inline-block;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.image {
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.caption {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: #444;
+}
