@@ -1,0 +1,36 @@
+name: Manual Deploy to Launch
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.GH_PAT }}
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build the project
+        run: npm run build
+
+      - name: Install Contentstack CLI
+        run: npm install -g @contentstack/cli
+
+      - name: Verify Contentstack CLI Installation
+        run: csdx --version
+
+      - name: Deploy to Launch manually
+        run: csdx launch deploy

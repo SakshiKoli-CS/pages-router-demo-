@@ -1,0 +1,39 @@
+{
+  "main": {
+    "uid": "6866767f27ea0ecc3e5a6b15",
+    "name": "pages-router-demo-",
+    "projectType": "GITPROVIDER",
+    "organizationUid": "blt8ca9ce72e25d0172",
+    "environments": [
+      {
+        "uid": "6866767f27ea0ecc3e5a6b1c",
+        "name": "Default",
+        "frameworkPreset": "NEXTJS",
+        "__typename": "Environment"
+      }
+    ],
+    "repository": {
+      "username": "SakshiKoli-CS",
+      "repositoryName": "SakshiKoli-CS/pages-router-demo-",
+      "gitProviderMetadata": {
+        "gitProvider": "GitHub",
+        "__typename": "GitHubMetadata"
+      },
+      "__typename": "Repository"
+    },
+    "__typename": "Project",
+    "deployments": [
+      {
+        "uid": "6866768027ea0ecc3e5a6b27",
+        "status": "QUEUED",
+        "commitUrl": "https://github.com/SakshiKoli-CS/pages-router-demo-/commit/465effb4e99d070007d8a21e5a96d35624f41698",
+        "createdAt": "2025-07-03T12:24:32.254Z",
+        "updatedAt": "2025-07-03T12:24:32.262Z",
+        "deploymentUrl": "pages-router-demo-.devcontentstackapps.com",
+        "commitHash": "465effb4e99d070007d8a21e5a96d35624f41698",
+        "commitMessage": "Initial commit with static home page and movie gallery",
+        "__typename": "Deployment"
+      }
+    ]
+  }
+}
