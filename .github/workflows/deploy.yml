@@ -39,7 +39,7 @@ jobs:
   env:
     AUTH_TOKEN: ${{ secrets.PAT}}
   run: |
-    echo "$LAUNCH_AUTH_TOKEN" | launch auth:token --ci
+    echo "$AUTH_TOKEN" | csdx auth:token --ci
 
 
       - name: Deploy to Launch manually
