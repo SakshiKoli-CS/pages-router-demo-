@@ -43,4 +43,4 @@ jobs:
           csdx auth:login -u "$CSDX_EMAIL" -p "$CSDX_PASSWORD"
 
       - name: Deploy to Launch manually
-        run: csdx launch
+        run: csdx launch --yes
