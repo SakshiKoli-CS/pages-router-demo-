@@ -37,7 +37,9 @@ jobs:
 
       - name: Authenticate with Contentstack Launch
         env:
-        AUTH_TOKEN: ${{ secrets.PAT}}
+        AUTH_TOKEN: ${{secrets.PAT}}
+        run: |
+        echo "$AUTH_TOKEN" | launch auth:token --ci
 
       - name: Deploy to Launch manually
         run: csdx launch deploy
