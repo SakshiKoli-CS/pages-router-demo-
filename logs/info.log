@@ -54,3 +54,7 @@
 {"level":"info","message":"2025-07-03 12:26:23.772:  Build and hosting process completed successfully"}
 {"level":"info","message":"2025-07-03 12:26:24.430:  Site is live"}
 {"level":"info","message":"Existing launch project identified"}
+{"level":"info","message":"Existing launch project identified"}
+{"level":"info","message":"Cannot create a new project because its an existing project."}
+{"level":"info","message":"Existing launch project identified"}
+{"level":"info","message":"Cannot create a new project because its an existing project."}

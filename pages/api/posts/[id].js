@@ -1,10 +1,7 @@
 export default async function handler(req, res) {
-  const {
-    query: { id },
-  } = req
+  const { id } = req.query
 
   try {
-    
     const response = await fetch(`https://jsonplaceholder.typicode.com/posts/${id}`)
 
     if (!response.ok) {
@@ -13,11 +10,13 @@ export default async function handler(req, res) {
 
     const post = await response.json()
 
-    const timestamp = new Date().toISOString()
-    const postWithTimestamp = { ...post, timestamp }
+    const postWithTimestamp = {
+      ...post,
+      timestamp: new Date().toISOString(),
+    }
 
     res.status(200).json(postWithTimestamp)
-  } catch (error) {
-    res.status(500).json({ error: 'Failed to fetch post' })
+  } catch (err) {
+    res.status(500).json({ error: 'Failed to fetch post data' })
   }
 }

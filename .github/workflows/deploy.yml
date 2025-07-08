@@ -32,5 +32,8 @@ jobs:
       - name: Verify Contentstack CLI Installation
         run: csdx --version
 
+      - name: Login 
+        run: csdx login
+
       - name: Deploy to Launch manually
         run: csdx launch deploy
