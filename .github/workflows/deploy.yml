@@ -46,4 +46,6 @@ jobs:
           csdx auth:login -u "$CSDX_EMAIL" -p "$CSDX_PASSWORD"
 
       - name: Deploy using Launch config
+        env:
+          DEBUG: "*"
         run: csdx launch --data-dir=. --redeploy-latest --config=./.cs-launch.json --type FileUpload
