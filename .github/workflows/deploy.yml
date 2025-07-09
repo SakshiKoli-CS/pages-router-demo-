@@ -33,7 +33,7 @@ jobs:
         run: csdx --version
 
       - name: Set Launch Region
-        run: csdx  config:set:region --name dev11 --cma https://dev11-api.csnonprod.com --cda https://dev11-cdn.csnonprod.com --ui-host https://dev11-app.csnonprod.com --launch https://dev-launch-api.csnonprod.com
+        run: csdx config:set:region AWS-NA
 
       - name: Authenticate to Contentstack
         env:
@@ -43,5 +43,9 @@ jobs:
           csdx auth:login -u "$CSDX_EMAIL" -p "$CSDX_PASSWORD"
 
       - name: Deploy using Launch config
-        run: csdx launch --config ./cs-launch.json --type FileUpload
+        run: csdx launch  --redeploy-latest --data-dir .next --config ./cs-launch.json --type FileUpload --org blt8ca9ce72e25d0172
+        
+        # run: csdx launch --data-dir .next --config ./cs-launch.json --type FileUpload 
+
+
 
