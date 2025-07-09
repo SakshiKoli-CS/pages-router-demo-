@@ -1,0 +1,28 @@
+{
+  "project": {
+    "uid": "686e61766054beec461d404f",
+    "name": "Fileupload_demo",
+    "projectType": "FILEUPLOAD",
+    "organizationUid": "bltb065b4ba5011f44e",
+    "environments": [
+      {
+        "uid": "686e61766054beec461d4056",
+        "name": "Default",
+        "frameworkPreset": "NEXTJS",
+        "__typename": "Environment"
+      }
+    ],
+    "__typename": "Project",
+    "deployments": [
+      {
+        "uid": "686e61766054beec461d4061",
+        "status": "QUEUED",
+        "createdAt": "2025-07-09T12:32:54.644Z",
+        "updatedAt": "2025-07-09T12:32:54.825Z",
+        "deploymentUrl": "fileuploaddemo.contentstackapps.com",
+        "commitMessage": "Triggered By File Upload",
+        "__typename": "Deployment"
+      }
+    ]
+  }
+}
