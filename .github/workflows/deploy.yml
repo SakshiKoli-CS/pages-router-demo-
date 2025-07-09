@@ -43,9 +43,5 @@ jobs:
           csdx auth:login -u "$CSDX_EMAIL" -p "$CSDX_PASSWORD"
 
       - name: Deploy using Launch config
-        run: csdx launch  --redeploy-latest --data-dir .next --config ./cs-launch.json --type FileUpload --org blt8ca9ce72e25d0172
+        run: csdx launch --data-dir=/Users/sakshi.koli/Desktop/pages-router-demo  --redeploy-latest --config=/Users/sakshi.koli/Desktop/pages-router-demo/.cs-launch.json
         
-        # run: csdx launch --data-dir .next --config ./cs-launch.json --type FileUpload 
-
-
-
