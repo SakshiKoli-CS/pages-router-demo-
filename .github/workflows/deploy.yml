@@ -42,5 +42,6 @@ jobs:
         run:
           csdx auth:login -u "$CSDX_EMAIL" -p "$CSDX_PASSWORD"
 
-      - name: Deploy to Launch manually
-        run: csdx launch --data-dir /Users/sakshi.koli/Desktop/pages-router-demo --type FileUpload
+      - name: Deploy using Launch config
+        run: csdx launch --config .cs-launch.json --type FileUpload --yes
+
