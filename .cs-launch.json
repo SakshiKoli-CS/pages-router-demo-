@@ -31,6 +31,15 @@
         "commitMessage": "Triggered By File Upload",
         "deploymentUrl": "fileuploaddemo.devcontentstackapps.com",
         "__typename": "Deployment"
+      },
+      {
+        "uid": "686f6a4b902ed6eeee51ba40",
+        "status": "QUEUED",
+        "createdAt": "2025-07-10T07:22:51.813Z",
+        "updatedAt": "2025-07-10T07:22:51.813Z",
+        "commitMessage": "Triggered By File Upload",
+        "deploymentUrl": "fileuploaddemo.devcontentstackapps.com",
+        "__typename": "Deployment"
       }
     ]
   }

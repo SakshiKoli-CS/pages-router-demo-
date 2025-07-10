@@ -11,3 +11,4 @@
 {"level":"error","message":"The 'Skip adding environment variables' option cannot be combined with other environment variable options. Please choose either 'Skip adding environment variables' or one or more of the other available options."}
 {"level":"error","message":"The 'Skip adding environment variables' option cannot be combined with other environment variable options. Please choose either 'Skip adding environment variables' or one or more of the other available options."}
 {"level":"error","message":"The 'Skip adding environment variables' option cannot be combined with other environment variable options. Please choose either 'Skip adding environment variables' or one or more of the other available options."}
+{"level":"error","message":"Environment \"default\" not found in this project. Please provide a valid environment name or UID."}
