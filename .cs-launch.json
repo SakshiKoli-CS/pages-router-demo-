@@ -1,12 +1,12 @@
 {
   "project": {
-    "uid": "686ea90754d87af7a6464f4d",
-    "name": "FileUploadDemo",
+    "uid": "686f652a74138dbaad4ee84d",
+    "name": "FileUpload_demo",
     "projectType": "FILEUPLOAD",
     "organizationUid": "blt8ca9ce72e25d0172",
     "environments": [
       {
-        "uid": "686ea90754d87af7a6464f54",
+        "uid": "686f652a74138dbaad4ee854",
         "name": "Default",
         "frameworkPreset": "NEXTJS",
         "__typename": "Environment"
@@ -15,19 +15,19 @@
     "__typename": "Project",
     "deployments": [
       {
-        "uid": "686ea90754d87af7a6464f5f",
+        "uid": "686f652a74138dbaad4ee85f",
         "status": "QUEUED",
-        "createdAt": "2025-07-09T17:38:15.760Z",
-        "updatedAt": "2025-07-09T17:38:15.953Z",
+        "createdAt": "2025-07-10T07:00:58.911Z",
+        "updatedAt": "2025-07-10T07:00:59.141Z",
         "deploymentUrl": "fileuploaddemo.devcontentstackapps.com",
         "commitMessage": "Triggered By File Upload",
         "__typename": "Deployment"
       },
       {
-        "uid": "686eb72490314ef372d7de8f",
+        "uid": "686f65da321118457e079c7e",
         "status": "QUEUED",
-        "createdAt": "2025-07-09T18:38:28.825Z",
-        "updatedAt": "2025-07-09T18:38:28.825Z",
+        "createdAt": "2025-07-10T07:03:54.802Z",
+        "updatedAt": "2025-07-10T07:03:54.802Z",
         "commitMessage": "Triggered By File Upload",
         "deploymentUrl": "fileuploaddemo.devcontentstackapps.com",
         "__typename": "Deployment"
