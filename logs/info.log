@@ -605,3 +605,6 @@
 {"level":"info","message":"2025-07-10 07:23:45.410:  Cloud functions:"}
 {"level":"info","message":"2025-07-10 07:23:45.548:  None"}
 {"level":"info","message":"2025-07-10 07:24:47.733:  Build and hosting process completed successfully"}
+{"level":"info","message":"Existing launch project identified"}
+{"level":"info","message":"Project redeployment aborted."}
+{"level":"info","message":"Existing launch project identified"}

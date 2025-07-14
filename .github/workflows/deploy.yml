@@ -29,6 +29,11 @@ jobs:
       - name: Show files in workspace
         run: ls -la
 
+      - name: Show latest commit message
+        run: |
+          echo "📝 Latest Commit Message:"
+          git log -1 --pretty=format:"%s"
+
       - name: Install Contentstack CLI
         run: npm install -g @contentstack/cli
 
@@ -46,9 +51,10 @@ jobs:
           csdx auth:login -u "$CSDX_EMAIL" -p "$CSDX_PASSWORD"
 
       - name: Deploy using Launch config
-        run: csdx launch --data-dir=. --redeploy-latest
+        run: csdx launch --data-dir=. --redeploy-latest 
 
+        # ADD ENVIRONMENT FLAG IF YOU HAVE DIFFERENT ENVIRONMENT AND YOU WANT TO DEPLOY IN THE SPECIFIC ENVIRONMENT
+        # --environment EnvironmentName 
 
-        # csdx launch --data-dir "/Users/sakshi.koli/Desktop/pages-router-demo" --type "FileUpload" --org "blt8ca9ce72e25d0172" --environment "Default" --name "FileUpload_demo" --framework "NextJs" --build-command= "npm run build" --out-dir "./.next" --variable-type "Skip adding environment variables"
-
-        # csdx launch --data-dir=/Users/sakshi.koli/Desktop/pages-router-demo --type=FileUpload --org=blt8ca9ce72e25d0172 --environment=Default --name=FileUpload_demo --framework=Nextjs --variable-type="Skip adding environment variables" --build-command="npm run build" --out-dir=./.next
+        # ADD CONFIG FLAG IF YOU .cs-launch.json IS NOT IN THE ROOT DIRECTORY
+        # --config Path_to_launch_config_file

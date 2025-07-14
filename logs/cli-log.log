@@ -12,3 +12,4 @@ Wed, 09 Jul 2025 12:06:02 GMT : cli-log: [32minfo[39m : successfully logged in
 Wed, 09 Jul 2025 13:26:20 GMT : cli-log: [31merror[39m : whoami error:"You are not logged in. Please login with command $ csdx auth:login"
 Wed, 09 Jul 2025 13:26:52 GMT : cli-log: [32minfo[39m : successfully logged in
 Wed, 09 Jul 2025 13:27:50 GMT : cli-log: [32minfo[39m : Currently logged in user:"sakshi.koli@contentstack.com"
+Fri, 11 Jul 2025 09:06:47 GMT : cli-log: [32minfo[39m : Currently logged in user:"sakshi.koli@contentstack.com"
