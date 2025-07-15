@@ -12,8 +12,6 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
-        with:
-          token: ${{ secrets.PAT }}
 
       - name: Set up Node.js
         uses: actions/setup-node@v4
@@ -25,9 +23,6 @@ jobs:
 
       - name: Build the project
         run: npm run build
-
-      - name: Show files in workspace
-        run: ls -la
 
       - name: Show latest commit message
         run: |
@@ -51,7 +46,7 @@ jobs:
           csdx auth:login -u "$CSDX_EMAIL" -p "$CSDX_PASSWORD"
 
       - name: Deploy using Launch config
-        run: csdx launch --data-dir=. --redeploy-latest 
+        run: csdx launch  --config=/Users/sakshi.koli/Desktop/cli_project/config/.cs-launchTest.json --redeploy-latest
 
         # ADD ENVIRONMENT FLAG IF YOU HAVE DIFFERENT ENVIRONMENT AND YOU WANT TO DEPLOY IN THE SPECIFIC ENVIRONMENT
         # --environment EnvironmentName 
